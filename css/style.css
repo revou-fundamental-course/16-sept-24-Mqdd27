@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid;
+  padding: 10px;
 }
 
 nav {
@@ -27,4 +29,20 @@ a {
 
 .home {
   background-color: yellow;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  /* color: white; */
+  border: 1px solid;
+  justify-content: flex-end;
+}
+footer > p {
+  color: red;
+  padding: 10px;
 }
