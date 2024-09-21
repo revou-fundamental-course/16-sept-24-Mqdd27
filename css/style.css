@@ -24,3 +24,7 @@ a {
   background-position: center;
   border-radius: 50%;
 }
+
+.home {
+  background-color: yellow;
+}
