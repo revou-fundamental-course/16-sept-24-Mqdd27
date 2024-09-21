@@ -1,0 +1,26 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid;
+  color: black;
+}
+
+.image-logo {
+  height: 75px;
+  width: 75px;
+  display: block;
+  background-image: url(https://dummyimage.com/600x400/000/fff&text=ini+logo);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
