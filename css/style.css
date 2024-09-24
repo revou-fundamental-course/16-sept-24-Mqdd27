@@ -35,13 +35,25 @@ a {
   background-image: url(../assets/Nature.jpg);
   border: 2px solid;
   background-size: cover;
-  height: 1366px;
+  height: 250px;
   width: auto;
   background-position: center;
 }
 
 .profile-banner > p {
   padding: 5px;
+}
+
+.message-container {
+  display: flex;
+  padding: 10px;
+  border: 1px solid;
+  width: 40%;
+}
+
+.result > textarea {
+  margin-top: 10px;
+  width: 50%;
 }
 
 footer {

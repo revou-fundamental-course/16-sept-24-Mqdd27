@@ -21,34 +21,27 @@
 
     <main>
       <!-- Home Section -->
-      <section id="#home">
-        <header class="home-header">
-          <script src="./js/script.js"></script>
-        </header>
+      <section id="home">
+        <header class="home-header"></header>
         <article>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            assumenda molestiae ratione aliquid nostrum facilis quasi neque vel.
-            Cupiditate saepe soluta vero suscipit aliquid pariatur ipsam modi
-            eaque mollitia voluptatem.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
           <!-- Profile Banner -->
           <div class="profile-banner">
-            <p>ini latihan Website</p>
+            <p>Ini Latihan Website</p>
           </div>
         </article>
       </section>
 
       <!-- Profile Section -->
-      <section id="#profile">
+      <section id="profile">
         <header class="profile-header">
           <h2>Profile</h2>
         </header>
       </section>
 
-      <!-- Portofolio Section -->
-      <section id="#portofolio">
+      <!-- Portfolio Section -->
+      <section id="portofolio">
         <header class="porto-header">
           <h2>Portofolio</h2>
         </header>
@@ -57,35 +50,50 @@
       <!-- Message Us Section -->
       <section id="message">
         <h2>Message Us</h2>
-        <form action="post">
-          <fieldset>
-            <legend>Write Your Message</legend>
-            <div class="left-message">
+        <div class="message-container">
+          <div class="form-input">
+            <form id="messageForm">
               <label for="nama">Nama: </label>
-              <input type="text" placeholder="Nama" />
+              <input type="text" id="nama" placeholder="Nama" />
               <br />
               <label for="tanggal-lahir">Tanggal Lahir: </label>
-              <input type="date" />
+              <input type="date" id="tanggal-lahir" />
               <br />
-              <label for="jenis-kelamin">Jenis Kelamin: </label>
-              <input type="radio" />
-              <label for="laki-laki">Laki-laki</label>
-              <input type="radio" />
+              <label for="jenis-kelamin">Jenis Kelamin</label>
+              <input
+                type="radio"
+                id="laki-laki"
+                name="jenis-kelamin"
+                value="Laki-Laki"
+              />
+              <label for="laki-laki">Laki-Laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenis-kelamin"
+                value="Perempuan"
+              />
               <label for="perempuan">Perempuan</label>
               <br />
-              <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
+              <label for="message">Pesan: </label>
               <br />
-              <input type="submit" />
-            </div>
-            <div class="rigth-message"></div>
-          </fieldset>
-          <div class="result"></div>
-        </form>
+              <textarea id="message-text"></textarea>
+              <br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <div class="result">
+            <textarea id="result" name="result" disabled></textarea>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>Created By Miqdad</p>
     </footer>
+
+    <!-- Ensure the script is loaded correctly at the bottom of the body -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
