@@ -25,6 +25,7 @@ a {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+  order: -1;
 }
 
 .home {
@@ -51,9 +52,19 @@ a {
   width: 40%;
 }
 
+.form-input > form {
+  width: 100%;
+}
+
+.form-input {
+  display: flex;
+  width: 100%;
+}
+
 .result > textarea {
   margin-top: 10px;
-  width: 50%;
+  width: 250px;
+  height: 100px;
 }
 
 footer {

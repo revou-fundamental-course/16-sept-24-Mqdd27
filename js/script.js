@@ -1,6 +1,11 @@
-var nama = "Miqdad";
+var username = "Miqdad";
 
-document.write("<h2>Welcome " + nama + "," + " To My Website" + "</h2>");
+// Wait until the DOM is fully loaded before attaching event listeners
+window.addEventListener("DOMContentLoaded", function () {
+  // Display username in the header
+  document.getElementById("welcome-message").innerHTML =
+    "<h2>Welcome " + username + ", To My Website</h2>";
+});
 
 // Wait until the DOM is fully loaded before attaching event listeners
 window.addEventListener("DOMContentLoaded", function () {
